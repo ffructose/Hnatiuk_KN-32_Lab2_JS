@@ -8,13 +8,13 @@
 
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="lab1.js"></script>
+    <script type="text/javascript" src="lab2.js"></script>
 </head>
 
 <body class="body">
     <header class="header">
         <h1>
-            Лабораторна робота 1 - Javascript
+            Лабораторна робота 2 - Javascript
         </h1>
 
         <h2 style="padding-top: 1vw;">
@@ -25,33 +25,71 @@
     </header>
 
     <main class="main">
+        <section class="menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="../../джсЛаб1/index.html">
+                        Лабораторна робота 1
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Лабораторна робота 2
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 3
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Лабораторна робота 4
+                    </a>
+                </li>
+            </ul>
+        </section>
+
         <section class="task">
 
             <h3>
                 Завдання на лабораторну роботу:
             </h3>
-            <p class="p-list">
-                Створити масиви значень:
-                <br>− ім’я друга;
-                <br>− дата народження;
-                <br>− номер телефону (допускаються пусті значення).
-            </p>
             <p class="p-text">
-                За 3 дні потрібно відправити вітальну листівку, а в день народження
-                поздоровити іменинника особисто по телефону. Вивести повідомлення про
-                необхідність відправлення листівки чи телефонного дзвінка. Вивести додаткове
-                повідомлення, якщо номер телефона не вказано.
+                На Вашій сторінці є малюнок. При наведенні миші на цей
+                малюнок він повинен змінитися. Коли Ви відведете мишку в
+                сторону, малюнок має набути початкового вигляду.
+
+                <br><br>Ввести No телефона (поле вводу) і назву міста (з клавіатури).
+                Якщо введено місто, якого немає в списку, то повідомити про це
+                користувача, інакше вивести No телефона, поставивши перед ним
+                код міста.
             </p>
         </section>
 
         <section class="result">
 
-            <h1>
-                Результат виконання завдання:
-            </h1>
-            <button class=b-button onclick="result()" id="rezult">
-                Перевірити в кого скоро свято ->
-            </button>
+            <div class="first">
+                <h3>Введіть номер телефону <br>(по місту) та місто</h3>
+                <div class="input-block">
+                    <label>
+                        <input type="tel" id="telInput" placeholder="Номер">
+                    </label>
+                    <label>
+                        <input type="text" id="cityInput" placeholder="Місто">
+                    </label>
+                    <button class="b-button" onclick="confirmAction()">
+                        підтвердити
+                    </button>
+                </div>
+                <div id="resultContainer" class="result_output">
+
+                </div>
+            </div>
+
+            <div class="second">
+                <img src="новорічнаЯ.jpg" alt="я пю какао">
+            </div>
 
         </section>
     </main>
