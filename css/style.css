@@ -19,20 +19,6 @@
     width: 100vw;
 }
 
-h1 {
-    font-family: "myFont";
-    font-size: 4.5vw;
-    line-height: 5vw;
-    font-weight: 500;
-}
-
-h2 {
-    font-family: "myFont";
-    font-size: 2.5vw;
-    line-height: 4vw;
-    font-weight: 300;
-}
-
 .menu {
     background-color: rgb(252, 192, 229);
 }
@@ -102,45 +88,11 @@ h2 {
     left: 0;
 }
 
-@media (max-width: 550px) {
-    .menu-list {
-        padding-top: 0;
-    }
-
-    .menu-list li {
-        display: block;
-    }
-
-    .menu-list li::after {
-        content: none;
-    }
-
-    .menu-list a {
-        padding: 25px 0 20px;
-        margin: 0 30px;
-    }
-}
-
 .task {
     padding-top: 2vw;
     text-align: center;
     width: 90vw;
     padding-left: 5vw;
-
-}
-
-h3 {
-    font-family: "myFont";
-    font-size: 3vw;
-    line-height: 4vw;
-    font-weight: 800;
-}
-
-p {
-    font-family: "myFont";
-    font-size: 2vw;
-    line-height: 2vw;
-    font-weight: 200;
 }
 
 .p-list {
@@ -152,12 +104,7 @@ p {
     text-align: center;
     padding-top: 2vw;
     padding-bottom: 3vw;
-
-
 }
-
-
-
 
 .b-button {
     background-color: cornflowerblue;
@@ -186,7 +133,7 @@ p {
 .first {
     width: 50%;
     padding-top: 3vw;
-
+    display: block;
 }
 
 input {
@@ -239,10 +186,41 @@ input:focus {
     width: 95%;
     background-color: pink;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: top;
+}
 
 
+
+
+
+
+h1 {
+    font-family: "myFont";
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+p {
+    font-family: "myFont";
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 200;
 }
 
 .result>h1 {
@@ -252,8 +230,177 @@ input:focus {
     font-weight: 800;
 }
 
-.result_output{
+.result_output {
     font-family: "myFont";
-    font-size: 3vw; 
+    font-size: 3vw;
     text-align: center;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-family: "myFont";
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 800;
+    }
+
+    p {
+        font-family: "myFont";
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+
+
+
+
+    .menu-list {
+        padding-top: 0;
+    }
+
+    .menu-list li {
+        display: block;
+    }
+
+    .menu-list li::after {
+        content: none;
+        font-size: 30px;
+    }
+
+    .menu-list a {
+        padding: 15px 0 15px;
+        margin: 0 30px;
+        font-size: 30px;
+        line-height: 10px;
+    }
+
+    .b-button {
+        padding: 15px 15px 15px 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-size: 25px;
+        margin-left: 0px;
+    }
+
+    input {
+        font-size: 20px;
+        width: 45%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    input:focus {
+        font-size: 20px;
+        width: 45%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .result_output {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+
+    .menu-list {
+        padding-top: 0;
+    }
+
+    .menu-list li {
+        display: block;
+    }
+
+    .menu-list li::after {
+        content: none;
+        font-size: 20px;
+    }
+
+    .menu-list a {
+        padding: 15px 0 10px;
+        margin: 0 30px;
+        font-size: 25px;
+    }
+
+    .b-button {
+        padding: 15px 15px 15px 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-size: 25px;
+        margin-left: 100px;
+    }
+
+    input {
+        font-size: 20px;
+        width: 45%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    input:focus {
+        font-size: 20px;
+        width: 45%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .result {
+        display: block;
+        justify-content: center;
+        align-items: top;
+    }
+
+    .first {
+        width: 100%;
+        padding-top: 3vw;
+        display: block;
+    }
+    .second {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .result_output {
+        font-size: 25px;
+    }
 }
